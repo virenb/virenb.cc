@@ -6,10 +6,16 @@ const DarkModeToggle = () => {
   return (
     <div>
       <input
+        name='darkmode'
         type='checkbox'
         checked={darkMode.value}
         onChange={darkMode.toggle}
       />
+      <label htmlFor='darkmode'>
+        <span img='role' aria-label='Crescent Moon'>
+          &#127769;
+        </span>
+      </label>
     </div>
   );
 };

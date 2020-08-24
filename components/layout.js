@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import DarkModeToggle from './darkmodetoggle';
 
 const name = 'Viren Bhagat';
 export const siteTitle = 'Viren Bhagat';
@@ -24,6 +25,7 @@ export default function Layout({ children, home }) {
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
+      <DarkModeToggle />
       <header className={styles.header}>
         {home ? (
           <>
